@@ -59,6 +59,11 @@ module.exports = {
         test: /\.(gif|png|jpe?g|eot|woff|ttf|svg|pdf)$/,
         loader: 'base64-inline-loader',
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+      }
     ]
   },
   entry: {
