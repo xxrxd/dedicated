@@ -730,23 +730,23 @@
                   <div class="item-bd">
                     <ul class="section-content">
                       <li>
-                        熟悉ECMAScript、CSS、HTML、JQuery、JavaScript、TypeScript、MongoDB、Node、Koa、Express、CommonJS，ES6模块化、HTTP协议
+                        熟悉ECMAScript、CSS、HTML、JQuery、JavaScript、TypeScript、MongoDB、Node、Koa、Express、CommonJS,ES6模块化、HTTP协议
                       </li>
                       <br />
                       <li>熟悉ES5、ES6+、Webpack、Gulp、Babel、Yeoman创建自己的脚手架工程目录</li>
                       <br />
                       <li>
-                        熟练掌握Vue2.x（全家桶），并阅读过Vue2.x源码，搭建过0-1Vue的脚手架项目，并实现在公司新项目中使用，也搭建过ReactHooks+Koa2+TS+Webpack开发环境
+                        熟练掌握Vue2.x（全家桶）,并阅读过Vue2.x源码,搭建过0-1Vue的脚手架项目,并实现在公司新项目中使用,也搭建过ReactHooks+Koa2+TS+Webpack开发环境
                       </li>
                       <br />
                       <li>
-                        熟练掌握Vue3 + vite，将项目有vue2升级为vue3（逻辑不变，按钮权限/组件权限/页面权限/全局埋点/全局mixin等全面复刻）
+                        熟练掌握Vue3 + vite,将项目有vue2升级为vue3（逻辑不变,按钮权限/组件权限/页面权限/全局埋点/全局mixin/自定义指令等全面复刻）
                       </li>
                       <br />
-                      <li>熟练使用UNI以及APICLOUND等平台开发混合APP，开发混合app组件，掌握从开始到打包的全过程，实现从WEB到APP的覆盖，提升APP的体验，如首页缓存，新页面显示骨架屏，增加滑动体验提升等</li>
+                      <li>熟练使用UNI以及APICLOUND等平台开发混合APP,开发混合app组件,掌握从开始到打包的全过程,实现从WEB到APP的覆盖,提升APP的体验,如首页缓存,新页面显示骨架屏,增加滑动体验提升等</li>
                       <br />
                       <li>
-                        熟练使用express以及中间件开发，熟练使用nginx反向代理（负载均衡），熟练使用jenkins自动化打包部署
+                        熟练使用express以及中间件开发,熟练使用nginx反向代理（负载均衡）,熟练使用jenkins自动化打包部署
                       <br />
                     </ul>
                   </div>
@@ -768,7 +768,7 @@
               </header> -->
               <div class="item-bd">
                 <ul class="section-content">
-                  <li>公司名称：深圳招银云创有限公司 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作时间：2016年6月-2021年4月</li>
+                  <li>公司名称：深圳招银云创有限公司 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作时间：2016年6月-2021年6月</li>
                   <li>公司名称：深圳盛视科技股份有限公司
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作时间：2021年7月-2022年2月
                   </li>
@@ -784,8 +784,52 @@
         </section>
         <!--项目经历-->
         <div class="item">
+            <header class="item-hd">
+              <h2 class="item-name theme-style"><strong>项目 一</strong></h2>
+              <!-- <a class="btn item-more">校园</a> -->
+            </header>
+            <hr>
+            <div class="item-bd pd10">
+              <ul class="section-content">
+                <li class="content-detail">
+                  <div class="left">项目名称：</div>
+                  <div class="right">基线版本-底层框架模板</div>
+                </li>
+                <li class="content-detail">
+                  <div class="left">项目描述：</div>
+                  <div class="right">
+                    创建一个从页面到组件/按钮都可操作权限,全局埋点,可视化组件源码展示,函数与组件多复用,局部与全局（模块或函数）的规划,打包方案制定等
+                  </div>
+                </li>
+                <li class="content-detail">
+                  <div class="left">责任描述：</div>
+                  <div class="right">项目负责人</div>
+                </li>
+                <li class="content-detail technology">
+                  <div class="left">技术描述：</div>
+                  <div class="right">
+                    <div>
+                      1.基于公司不同项目在业务上的相似性,搭建的Vue2.x+VueRouter+Webpack+Babel+ES6开发生产环境的基线版本,大幅提高项目开发效率。
+                    </div>
+                    <div>2.项目中对于路由权限的控制采用前端本地编辑json的方式推给后端,登陆后再推给前端(拿权限),解决权限问题的同时,解放vuerouter路由守卫的性能损失</div>
+                    <div>3.项目中webpack使用公共scss全局变量,可以做到快速变更主题颜色,方便后续项目扩展与使用</div>
+                    <div>4.根据项目的特点采用不同的全局mixin,全局mixin以及局部mixin都是用mixin前缀,避免污染组件</div>
+                    <div>5.全局自定义指令的使用：组件或者dom的权限判断,控制组件或者dom的展示与否,以及点击时收集用户操作信息,通过vuex与路由传递按钮信息到axios,在自定义指令中使用事件代理,先拿到信息再走axios</div>
+                    <div>
+                      6.对于耗时较多的组件或者使用较多的自定义组件部分,另开一个项目进行源码展示(如绚丽的echarts/svg动画以及一些3d特效)
+                    </div>
+                    <div>7.使用axios编写统一的请求封装以及响应方案,根据自定义参数与请求方式进行不同处理,使用时一次过,简单明炼</div>
+                    <div>8.编写复用功能模块代码以及组件,websocket封装/视频模块多格式多参数封装/表格封装/按钮封装</div>
+                    <div>9.项目统一打包成gzip,引入插件对小图进行base64转化,针对不同的项目可选择开启多线程打包</div>
+                    <div>10.制定项目的vue-i18n国际化方案</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div class="item">
           <header class="item-hd">
-            <h2 class="item-name theme-style"><strong>项目 一</strong></h2>
+            <h2 class="item-name theme-style"><strong>项目 二</strong></h2>
             <!-- <a class="btn item-more">校园</a> -->
           </header>
           <hr>
@@ -798,34 +842,34 @@
               <li class="content-detail">
                 <div class="left">项目描述：</div>
                 <div class="right">
-                  创新验放系统，为其他项目产出大量可复用代码
+                  创新验放系统,为其他项目产出大量可复用代码
                 </div>
               </li>
               <li class="content-detail">
                 <div class="left">责任描述：</div>
-                <div class="right">项目前端负责人，对整个项目的</div>
+                <div class="right">项目前端负责人,对整个项目的</div>
               </li>
               <li class="content-detail technology">
                 <div class="left">技术描述：</div>
                 <div class="right">
                   <div>
-                    1.基于平台现有业务发展，移植部分业务代码到手动搭建的Vue2.x+Webpack5+Babel+ES6开发生产环境的Open平台中开发，对程序进行容错处理，对部分新增API使用postman做接口测试，确保项目平稳过渡。
+                    1.基于平台现有业务发展,对程序进行容错处理,对部分新增API使用postman做接口测试,确保项目平稳过渡。
                   </div>
-                  <div>2.由于各个程序中使用过程中都会遇到一些奇怪错误问题，于是开发了错误捕获的NPM包，发布到公司私仓中，供各个项目使用。以及维护由于业务变动需要修改的NPM包。</div>
-                  <div>3.开发对接微信小程序原生支付，H5支付，二维码支付。微信小程序的分享</div>
-                  <div>4.PC平台的钱包支付，微信二维码，支付宝，白条支付。</div>
-                  <div>5.考虑到运营需要查看日、月、年用户活动情况，以及出错误情况，搭建监控日志服务，邮箱通知及时处理相关问题</div>
+                  <div>2.由于各个程序中使用过程中都会遇到一些奇怪错误问题,于是开发了错误捕获的NPM包,发布到公司私仓中,供各个项目使用。以及维护由于业务变动需要修改的NPM包。</div>
+                  <div>3.开发对接微信小程序原生支付,H5支付,二维码支付。微信小程序的分享</div>
+                  <div>4.PC平台的钱包支付,微信二维码,支付宝,白条支付。</div>
+                  <div>5.考虑到运营需要查看日、月、年用户活动情况,以及出错误情况,搭建监控日志服务,邮箱通知及时处理相关问题</div>
                   <div>
-                    6.逐一数据匹配推送，考虑到用户上传的excel表格中的条数多，推送过来的数据大造成页面卡顿，才采取数据分批次推送，实现自定义长列表优化渲染方案，解决页面数据大的时候卡顿问题
+                    6.逐一数据匹配推送,考虑到用户上传的excel表格中的条数多,推送过来的数据大造成页面卡顿,才采取数据分批次推送,实现自定义长列表优化渲染方案,解决页面数据大的时候卡顿问题
                   </div>
-                  <div>7.由于对部分数据表格展现、操作要求比较高，所以个人中心平台使用Vue的渲染函数渲染自定义的表格组件，以适应复杂的开发需求，并做成npm包发布私仓，供其他项目使用</div>
+                  <div>7.由于对部分数据表格展现、操作要求比较高,所以个人中心平台使用Vue的渲染函数渲染自定义的表格组件,以适应复杂的开发需求,并做成npm包发布私仓,供其他项目使用</div>
                   <div>8.编写统一的响应码错误处理程序</div>
-                  <div>9.公司有自己的发布到内网的测试环境平台，但每次都需要自己手动打包，压缩上传，流程繁琐，所以自己写了个自动构建化发布build+shell脚本到开发环境，添加代码方面Eslint的统一约束，对后期项目可维护性，扩展性大大提升。并在团队内分享</div>
-                  <div>10.针对项目中多个地方对Inputde输入格式做特殊处理，于是使用Vue的自定义指令v-Number实现对数据格式的处理</div>
-                  <div>11.provide / inject深层次的组件数据传递，优化props传递问题</div>
-                  <div>12.Open开发平台面对的国外，国内都有客户，提出并实现Open开发平台的vue-i18n国际化方案</div>
+                  <div>9.公司有自己的发布到内网的测试环境平台,但每次都需要自己手动打包,压缩上传,流程繁琐,所以自己写了个自动构建化发布build+shell脚本到开发环境,添加代码方面Eslint的统一约束,对后期项目可维护性,扩展性大大提升。并在团队内分享</div>
+                  <div>10.针对项目中多个地方对Inputde输入格式做特殊处理,于是使用Vue的自定义指令v-Number实现对数据格式的处理</div>
+                  <div>11.provide / inject深层次的组件数据传递,优化props传递问题</div>
+                  <div>12.Open开发平台面对的国外,国内都有客户,提出并实现Open开发平台的vue-i18n国际化方案</div>
                   <div>
-                    13.项目优化，externals公用代码提取和CDN来优化项目的体积，build过后contenthash处理缓存问题,Gzip压缩。处理项目中遗留v-show和v-if的使用问题，v-for的key问题，keep-alive优化对相关组件，requestAnimationFrame分批次执行大数据量的计算
+                    13.项目优化,externals公用代码提取和CDN来优化项目的体积,build过后contenthash处理缓存问题,Gzip压缩。处理项目中遗留v-show和v-if的使用问题,v-for的key问题,keep-alive优化对相关组件,requestAnimationFrame分批次执行大数据量的计算
                   </div>
                 </div>
               </li>
@@ -834,7 +878,7 @@
         </div>
         <div class="item">
           <header class="item-hd">
-            <h2 class="item-name theme-style"><strong>项目 二</strong></h2>
+            <h2 class="item-name theme-style"><strong>项目 三</strong></h2>
             <!-- <a class="btn item-more">校园</a> -->
           </header>
           <hr>
@@ -847,25 +891,25 @@
               <li class="content-detail">
                 <div class="left">项目描述：</div>
                 <div class="right">
-                  一个数据汇聚管理平台，包含PC端与APP
+                  多个数据汇聚管理平台,包含PC端与APP
                 </div>
               </li>
               <li class="content-detail">
                 <div class="left">责任描述：</div>
-                <div class="right">优化客户前端使用体验，包含网页展示以及APP的制作、打包</div>
+                <div class="right">优化客户前端使用体验,包含网页展示以及APP的制作、打包</div>
               </li>
               <li class="content-detail technology">
                 <div class="left">技术描述：</div>
                 <div class="right">
-                  <div>1.首页使用echart做相关的数据图表展示，关于离线地图问题，调研了几个方案，离线的百度地图，高德地图，但两者官网并未提及离线地图相关部署方案，所以选择面向开源地图引擎openlayers gis手动搭建0-1做离线地图应用，实现标记点定位，瓦片资源需放在服务器上访问，于是手动搭建nginx配置瓦片资源服务器，首页数据需实时动态展示，采用websocket推送首页数据源，加上心跳（30秒）检测重连（3次），以及后续的容错处理，连接失败，发送邮件通知开发人员，及时处理错误</div>
-                  <div>2.配置文件抽离，项目结构初始化，请求地址统一管理，axios重新封装增加请求登录拦截，响应拦截，增强代码的健壮性，前端路由拦截，解决开发时请求跨域问题</div>
-                  <div>3.基于组件化的思想：封装swiper的第三方消息封装组件，基于iview再次封装项目弹窗，表单输入等通用组件</div>
+                  <div>1.首页使用echart做相关的数据图表展示,关于离线地图问题,调研了几个方案,离线的百度地图,高德地图,但两者官网并未提及离线地图相关部署方案,所以选择面向开源地图引擎openlayers gis手动搭建0-1做离线地图应用,实现标记点定位,瓦片资源需放在服务器上访问,于是手动搭建nginx配置瓦片资源服务器,首页数据需实时动态展示,采用websocket推送首页数据源,加上心跳（30秒）检测重连（3次）,以及后续的容错处理,连接失败,发送邮件通知开发人员,及时处理错误</div>
+                  <div>2.配置文件抽离,项目结构初始化,请求地址统一管理,axios重新封装增加请求登录拦截,响应拦截,增强代码的健壮性,前端路由拦截,解决开发时请求跨域问题</div>
+                  <div>3.基于组件化的思想：封装swiper的第三方消息封装组件,基于iview再次封装项目弹窗,表单输入等通用组件</div>
                   <div>
-                    4.为方便数据的统一管理，以及后期项目的发展，对于项目中多个地方使用的状态，采用vuex做数据共享，增加modules，使数据分层管理更清晰，对于组件内部私有的状态，存组件内即可</div>
-                  <div>5.对于项目中多次使用的全局函数，采取提取公共代码或mixins或过滤器的方式，一次封装，多次复用，如封装全局时间moment过滤器，utils函数</div>
-                  <div>6.项目的一些优化：配置webpack，1.针对请求数进行优化，prefetch，preload，我们发现请求数增多是因为我们页面预先渲染了其它组件 2.externals公用代码提取，使用cdn加载 3.删除注释，console，debugger，去除.map文件，5.使用vue-lazyload图片懒加载,路由缓存组件数据、路由懒加载</div>
-                  <div>7.创建自动化构建部署脚本git+shell,使用husky+lint-staged做git代码提交前检查，规范代码风格，形成前端的一套完整发布流程</div>
-                  <div>8.完善APP数据信息传递，由单向传递封装为双向传递，并优化代码结构。</div>
+                    4.为方便数据的统一管理,以及后期项目的发展,对于项目中多个地方使用的状态,采用vuex做数据共享,增加modules,使数据分层管理更清晰,对于组件内部私有的状态,存组件内即可</div>
+                  <div>5.对于项目中多次使用的全局函数,采取提取公共代码或mixins或过滤器的方式,一次封装,多次复用,如封装全局时间moment过滤器,utils函数</div>
+                  <div>6.项目的一些优化：配置webpack,1.针对请求数进行优化,prefetch,preload,我们发现请求数增多是因为我们页面预先渲染了其它组件 2.externals公用代码提取,使用cdn加载 3.删除注释,console,debugger,去除.map文件,5.使用vue-lazyload图片懒加载,路由缓存组件数据、路由懒加载</div>
+                  <div>7.创建自动化构建部署脚本git+shell,使用husky+lint-staged做git代码提交前检查,规范代码风格,形成前端的一套完整发布流程</div>
+                  <div>8.完善APP数据信息传递,由单向传递封装为双向传递,并优化代码结构。</div>
                 </div>
               </li>
             </ul>
@@ -874,22 +918,6 @@
       </div>
     </div>
   </main>
-
-  <footer class="github-footer">
-    <div>
-      <!-- <a class="footer-link" href=https://baidu.com> Copyright &copy;H&S 2020 - 2021&nbsp;&nbsp;&nbsp; </a>
-      <a href="https://baidu.com">下载 PDF 版简历&nbsp;&nbsp;&nbsp;</a>
-
-      <br>
-      <a class="footer-link" target="blank" rel="noopener noreferrer"
-        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=XXXXXXXXXXX">
-        <img class="footer-link-img" src="https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/img/beian.png">鲁公网安备
-        XXXXXXXXXXXXXX号&nbsp;&nbsp;&nbsp;</a>
-      <a class="footer-link" href="https://beian.miit.gov.cn/">鲁ICP备XXXXXXXXXX号</a> -->
-
-
-    </div>
-  </footer>
 </body>
 
 </html>
