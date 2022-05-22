@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -822,6 +823,7 @@
                     <div>8.编写复用功能模块代码以及组件,websocket封装/视频模块多格式多参数封装/表格封装/按钮封装</div>
                     <div>9.项目统一打包成gzip,引入插件对小图进行base64转化,针对不同的项目可选择开启多线程打包</div>
                     <div>10.制定项目的vue-i18n国际化方案</div>
+                    <div>11.制定项目的多人开发方案以及主题方案</div>
                   </div>
                 </li>
               </ul>
@@ -886,30 +888,28 @@
             <ul class="section-content">
               <li class="content-detail">
                 <div class="left">项目名称：</div>
-                <div class="right">数据汇聚平台+混合APP</div>
+                <div class="right">机场与货场多平台+混合APP+小程序</div>
               </li>
               <li class="content-detail">
                 <div class="left">项目描述：</div>
                 <div class="right">
-                  多个数据汇聚管理平台,包含PC端与APP
+                  机场与货场的流程管理，使流程清晰，简单化
                 </div>
               </li>
               <li class="content-detail">
                 <div class="left">责任描述：</div>
-                <div class="right">优化客户前端使用体验,包含网页展示以及APP的制作、打包</div>
+                <div class="right">项目前端负责人</div>
               </li>
               <li class="content-detail technology">
                 <div class="left">技术描述：</div>
                 <div class="right">
-                  <div>1.首页使用echart做相关的数据图表展示,关于离线地图问题,调研了几个方案,离线的百度地图,高德地图,但两者官网并未提及离线地图相关部署方案,所以选择面向开源地图引擎openlayers gis手动搭建0-1做离线地图应用,实现标记点定位,瓦片资源需放在服务器上访问,于是手动搭建nginx配置瓦片资源服务器,首页数据需实时动态展示,采用websocket推送首页数据源,加上心跳（30秒）检测重连（3次）,以及后续的容错处理,连接失败,发送邮件通知开发人员,及时处理错误</div>
-                  <div>2.配置文件抽离,项目结构初始化,请求地址统一管理,axios重新封装增加请求登录拦截,响应拦截,增强代码的健壮性,前端路由拦截,解决开发时请求跨域问题</div>
-                  <div>3.基于组件化的思想：封装swiper的第三方消息封装组件,基于iview再次封装项目弹窗,表单输入等通用组件</div>
+                  <div>1.由于后台系统有多个域名,与后端配合使用多点登录</div>
+                  <div>2.在基线版本基础上,扩展公用自定义指令</div>
+                  <div>3.封装组件,发布到npm</div>
                   <div>
-                    4.为方便数据的统一管理,以及后期项目的发展,对于项目中多个地方使用的状态,采用vuex做数据共享,增加modules,使数据分层管理更清晰,对于组件内部私有的状态,存组件内即可</div>
-                  <div>5.对于项目中多次使用的全局函数,采取提取公共代码或mixins或过滤器的方式,一次封装,多次复用,如封装全局时间moment过滤器,utils函数</div>
-                  <div>6.项目的一些优化：配置webpack,1.针对请求数进行优化,prefetch,preload,我们发现请求数增多是因为我们页面预先渲染了其它组件 2.externals公用代码提取,使用cdn加载 3.删除注释,console,debugger,去除.map文件,5.使用vue-lazyload图片懒加载,路由缓存组件数据、路由懒加载</div>
-                  <div>7.创建自动化构建部署脚本git+shell,使用husky+lint-staged做git代码提交前检查,规范代码风格,形成前端的一套完整发布流程</div>
-                  <div>8.完善APP数据信息传递,由单向传递封装为双向传递,并优化代码结构。</div>
+                    4.制定小程序模板框架</div>
+                  <div>5.对于项目整体流程讨论与修改提出意见,提升使用体验</div>
+                  <div>6.主页配合后台做出动态地图以及动态相机标签动效</div>
                 </div>
               </li>
             </ul>
