@@ -54,14 +54,6 @@
     border: none
   }
 
-  elements-of-type
-  (
-  html5-block
-
-  )
-  {
-    display: block
-  }
   * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -849,7 +841,7 @@
               </li>
               <li class="content-detail">
                 <div class="left">责任描述：</div>
-                <div class="right">项目前端负责人,对整个项目的</div>
+                <div class="right">项目前端负责人</div>
               </li>
               <li class="content-detail technology">
                 <div class="left">技术描述：</div>
@@ -903,18 +895,49 @@
               <li class="content-detail technology">
                 <div class="left">技术描述：</div>
                 <div class="right">
-                  <div>1.由于后台系统有多个域名,与后端配合使用多点登录</div>
+                  <div>1.前端实现不同项目，不同端口间的登录与鉴权</div>
                   <div>2.在基线版本基础上,扩展公用自定义指令</div>
-                  <div>3.封装组件,发布到npm</div>
+                  <div>3.多系统组件封装并适配,并发布到npm</div>
                   <div>
                     4.制定小程序模板框架</div>
                   <div>5.对于项目整体流程讨论与修改提出意见,提升使用体验</div>
-                  <div>6.主页配合后台做出动态地图以及动态相机标签动效</div>
                 </div>
               </li>
             </ul>
           </div>
         </div>
+        <div class="item">
+            <header class="item-hd">
+              <h2 class="item-name theme-style"><strong>个人项目</strong></h2>
+              <!-- <a class="btn item-more">校园</a> -->
+            </header>
+            <hr>
+            <div class="item-bd pd10">
+              <ul class="section-content">
+                <li class="content-detail">
+                  <div class="left">项目名称：</div>
+                  <div class="right">商场小程序+后台管理系统</div>
+                </li>
+                <li class="content-detail">
+                  <div class="left">项目描述：</div>
+                  <div class="right">
+                    全栈项目，laravel提供接口服务，小程序作为前端，vite+vue3+typescript制作后台管理
+                  </div>
+                </li>
+                <li class="content-detail technology">
+                  <div class="left">技术描述：</div>
+                  <div class="right">
+                    <div>1.laravel鉴权+自定义拦截中间件，对于小程序与后台公用接口的区别逻辑（既复用也做区分限制）</div>
+                    <div>2.小程序采取更好的分包策略，减少首屏渲染时间</div>
+                    <div>3.去除前端和后端逻辑重复代码，项目更易于管理</div>
+                    <div>
+                      4.在保存某些可能会被修改的数据时，采用了json存到mysql的做法（如购买记录、收货地址等），避免货不对物</div>
+                    <div>5.后台与小程序一致采用请求头带参数形式，避免csrf攻击</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
     </div>
   </main>
